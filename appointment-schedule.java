@@ -2,7 +2,7 @@ package exercicios20_matriz;
 
 import java.util.Scanner;
 
-public class ex04 {
+public class appointment {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class ex04 {
 			System.out.println("|Digite 0 para sair.                     |");
 			System.out.println(" ---------------------------------------- ");
 
-			System.out.print("Digite sua opção: ");
+			System.out.print("Digite sua opÃ§Ã£o: ");
 			opcao = sc.nextByte();
 
 			if (opcao == 1) { // adicionar compromisso
@@ -28,12 +28,12 @@ public class ex04 {
 				int mes = 0;
 
 				while (!mesValido) { // validar mes
-					System.out.print("Entre com o mês: ");
+					System.out.print("Entre com o mÃªs: ");
 					mes = sc.nextInt();
 					if (mes > 0 && mes <= 12) {
 						mesValido = true;
 					} else {
-						System.out.println("Mês inválido, digite novamente.");
+						System.out.println("MÃªs invÃ¡lido, digite novamente.");
 					}
 				}
 
@@ -41,12 +41,12 @@ public class ex04 {
 				int dia = 0;
 
 				while (!diaValido) { // validar o dia
-					System.out.print("Entre com o dia do mês: ");
+					System.out.print("Entre com o dia do mÃªs: ");
 					dia = sc.nextInt();
 					if (dia > 0 && dia < 32) {
 						diaValido = true;
 					} else {
-						System.out.println("Dia inválido, digite novamente.");
+						System.out.println("Dia invÃ¡lido, digite novamente.");
 					}
 				}
 
@@ -59,7 +59,7 @@ public class ex04 {
 					if (hora >= 0 && hora <= 8) {
 						horaValida = true;
 					} else {
-						System.out.println("Hora inválida, digite novamente.");
+						System.out.println("Hora invÃ¡lida, digite novamente.");
 					}
 				}
 
@@ -76,13 +76,13 @@ public class ex04 {
 				int mes = 0;
 
 				while (!mesValido) {
-					System.out.print("Entre com o mês do compromisso: ");
+					System.out.print("Entre com o mÃªs do compromisso: ");
 					mes = sc.nextInt();
 
 					if (mes > 0 && mes < 13) {
 						mesValido = true;
 					} else {
-						System.out.println("Mês inválido, digite novamente.");
+						System.out.println("MÃªs invÃ¡lido, digite novamente.");
 					}
 				}
 
@@ -90,13 +90,13 @@ public class ex04 {
 				int dia = 0;
 
 				while (!diaValido) { // validar dia
-					System.out.print("Entre com o dia do mês: ");
+					System.out.print("Entre com o dia do mÃªs: ");
 					dia = sc.nextInt();
 
 					if (dia > 0 && dia < 32) {
 						diaValido = true;
 					} else {
-						System.out.println("Dia inválido, digite novamente.");
+						System.out.println("Dia invÃ¡lido, digite novamente.");
 					}
 				}
 
@@ -110,20 +110,20 @@ public class ex04 {
 					if (hora >= 0 && hora < 25) {
 						horaValida = true;
 					} else {
-						System.out.println("Hora inválida, digite novamente.");
+						System.out.println("Hora invÃ¡lida, digite novamente.");
 					}
 				}
 
 				mes--;
 				dia--;
 				hora--;
-				System.out.println("O compromisso agendado é: ");
+				System.out.println("O compromisso agendado Ã©: ");
 				System.out.println(compromisso[mes][dia][hora]);
 
 			} else if (opcao == 0) { // sair
 				sair = true;
 			} else {
-				System.out.println("Opção inválida, digite novamente.");
+				System.out.println("OpÃ§Ã£o invÃ¡lida, digite novamente.");
 			}
 		}
 		sc.close();
